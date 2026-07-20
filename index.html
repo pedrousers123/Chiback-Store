@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pizza Chiback</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+
+<div class="container">
+
+<a class="navbar-brand" href="#">
+🍕 Pizza Chiback
+</a>
+
+<button class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+
+<a class="nav-link active" href="#">
+<i class="bi bi-house-fill"></i>
+Início
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="carrinho.html">
+
+<i class="bi bi-cart-fill"></i>
+
+Carrinho
+
+<span class="badge bg-warning text-dark"
+id="contador">
+
+0
+
+</span>
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ================= BANNER ================= -->
+
+<section class="banner">
+
+<div class="container">
+
+<h1>🍕 Pizza Chiback</h1>
+
+<p>
+As pizzas mais saborosas da cidade.
+</p>
+
+<a href="#produtos"
+class="btn btn-warning btn-lg">
+
+Ver Cardápio
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= PRODUTOS ================= -->
+
+<section class="container my-5" id="produtos">
+
+<div class="titulo">
+
+<h2>Nosso Cardápio</h2>
+
+<p>
+Escolha sua pizza favorita.
+</p>
+
+</div>
+
+<div class="row" id="listaProdutos">
+
+</div>
+
+</section>
+
+<!-- ================= TOAST ================= -->
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+
+<div id="toastCarrinho" class="toast">
+
+<div class="toast-header bg-success text-white">
+
+<strong class="me-auto">
+
+Carrinho
+
+</strong>
+
+<button
+class="btn-close btn-close-white"
+data-bs-dismiss="toast">
+
+</button>
+
+</div>
+
+<div class="toast-body">
+
+🍕 Produto adicionado ao carrinho!
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h5>🍕 Pizza Chiback</h5>
+
+<p>
+
+© 2026 - Todos os direitos reservados.
+
+</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/produtos.js"></script>
+
+</body>
+
+</html>

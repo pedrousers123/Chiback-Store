@@ -1,0 +1,398 @@
+/* ============================
+   RESET
+============================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fa;
+}
+
+/* ============================
+   NAVBAR
+============================ */
+
+.navbar{
+    background:linear-gradient(90deg,#b71c1c,#e53935)!important;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.navbar-brand{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.nav-link{
+    color:white!important;
+    transition:.3s;
+    font-size:18px;
+}
+
+.nav-link:hover{
+    color:#FFD54F!important;
+    transform:translateY(-2px);
+}
+
+#contador{
+    margin-left:5px;
+    font-size:13px;
+}
+
+/* ============================
+   BANNER
+============================ */
+
+.banner{
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1600");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    height:500px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.banner h1{
+
+    font-size:60px;
+    font-weight:bold;
+    text-shadow:4px 4px 10px black;
+
+}
+
+.banner p{
+
+    font-size:22px;
+    margin-top:15px;
+
+}
+
+.banner .btn{
+
+    margin-top:25px;
+    padding:14px 35px;
+    border-radius:30px;
+    font-weight:bold;
+    font-size:18px;
+
+}
+
+/* ============================
+   TÍTULOS
+============================ */
+
+.titulo{
+
+    text-align:center;
+    margin-bottom:40px;
+
+}
+
+.titulo h2{
+
+    font-size:42px;
+    font-weight:bold;
+    color:#d32f2f;
+
+}
+
+.titulo p{
+
+    color:#666;
+
+}
+
+/* ============================
+   CARDS
+============================ */
+
+.card{
+
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.28);
+
+}
+
+.card img{
+
+    height:230px;
+    object-fit:cover;
+    transition:.4s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.card-body{
+
+    padding:20px;
+
+}
+
+.card-title{
+
+    font-size:24px;
+    font-weight:bold;
+
+}
+
+.card-text{
+
+    color:#666;
+    min-height:55px;
+
+}
+
+.preco{
+
+    font-size:30px;
+    color:#d32f2f;
+    font-weight:bold;
+    margin:15px 0;
+
+}
+
+/* ============================
+   BOTÕES
+============================ */
+
+.btn-danger{
+
+    border:none;
+    border-radius:12px;
+    padding:12px;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+.btn-danger:hover{
+
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+
+}
+
+.btn-success{
+
+    border-radius:12px;
+    padding:14px 30px;
+    font-size:20px;
+    font-weight:bold;
+
+}
+
+.btn-success:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ============================
+   CARRINHO
+============================ */
+
+.item-carrinho{
+
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    margin-bottom:20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.item-carrinho:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.item-carrinho img{
+
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-right:20px;
+
+}
+
+.item-carrinho h4{
+
+    font-weight:bold;
+
+}
+
+.item-carrinho p{
+
+    margin-bottom:5px;
+
+}
+
+#totalCompra{
+
+    font-size:34px;
+    font-weight:bold;
+    color:#198754;
+
+}
+
+/* ============================
+   TOAST
+============================ */
+
+.toast{
+
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+}
+
+/* ============================
+   FOOTER
+============================ */
+
+footer{
+
+    background:#212529;
+    color:white;
+    margin-top:60px;
+    padding:40px;
+
+}
+
+footer h5{
+
+    font-size:26px;
+
+}
+
+/* ============================
+   ANIMAÇÃO
+============================ */
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.card{
+
+    animation:aparecer .8s ease;
+
+}
+
+/* ============================
+   RESPONSIVO
+============================ */
+
+@media(max-width:768px){
+
+.banner{
+
+    height:330px;
+    background-attachment:scroll;
+
+}
+
+.banner h1{
+
+    font-size:38px;
+
+}
+
+.banner p{
+
+    font-size:18px;
+
+}
+
+.card img{
+
+    height:200px;
+
+}
+
+.item-carrinho{
+
+    flex-direction:column;
+    text-align:center;
+
+}
+
+.item-carrinho img{
+
+    margin:0 0 15px 0;
+
+}
+
+#totalCompra{
+
+    font-size:28px;
+
+}
+
+.btn-success{
+
+    width:100%;
+
+}
+
+}
