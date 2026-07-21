@@ -1,3 +1,4 @@
+
 /* ============================
    RESET
 ============================ */
@@ -122,6 +123,50 @@ body{
     color:#666;
 
 }
+/* ============================
+   TOAST
+============================ */
+
+.logo{
+    width:140px;
+    height:120px;
+    margin-right:12px;
+    object-fit:contain;
+    transition:.3s;
+
+}
+
+.logo:hover{
+    transform:rotate(-8deg);
+    
+
+}
+.navbar-brand span{
+    font-size:28px;
+    font-weight:bold;
+    
+}
+@media(max-width:768px){
+
+    .logo{
+        width:45px;
+        height:45px;
+    }
+
+    .nevbvar-brand span{
+        font-size:22px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
 
 /* ============================
    CARDS
